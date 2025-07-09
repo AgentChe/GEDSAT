@@ -226,7 +226,7 @@ private extension ProfileManager {
     
     func loadProfile() -> Single<Profile?> {
         let request = GetProfileRequest(domain: GlobalDefinitions.gedDomainUrl,
-                                        apiKey: GlobalDefinitions.gedDomainUrl,
+                                        apiKey: GlobalDefinitions.gedApiKey,
                                         userToken: sessionManager.internalId)
         
         return defaultRequestWrapper
